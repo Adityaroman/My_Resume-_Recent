@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aditya's Resume</title>
+
+  <!-- Redirect after 10 seconds to PDF viewer page -->
+  <meta http-equiv="refresh" content="10; url=pdf-viewer.html" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="typed">Welcome to Aditya's Portfolio</h1>
+
+    <p id="quote">"Your personal motto will appear here."</p>
+    <p>Your resume will open automatically in a moment...</p>
+
+    <!-- Download button -->
+    <a href="Aditya_Sharma_Resume.pdf" download class="btn">
+      <i class="fa fa-download"></i> Download Resume
+    </a>
+
+    <!-- Skill Bars -->
+    <section class="skills">
+      <h2>My Skills</h2>
+      <div class="skill">
+        <span>Python</span>
+        <div class="skill-bar"><div class="skill-level" data-level="90"></div></div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="skill-bar"><div class="skill-level" data-level="75"></div></div>
+      </div>
+      <div class="skill">
+        <span>HTML & CSS</span>
+        <div class="skill-bar"><div class="skill-level" data-level="85"></div></div>
+      </div>
+      <div class="skill">
+        <span>Java</span>
+        <div class="skill-bar"><div class="skill-level" data-level="70"></div></div>
+      </div>
+    </section>
+
+    <!-- Social / Contact links -->
+    <section class="contacts">
+      <a href="https://www.linkedin.com/in/adityasharmagrd/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/Adityaroman" target="_blank" rel="noopener noreferrer" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="adityasharmagrd@gmail.com" title="Email">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </section>
+
+    <!-- Loader spinner -->
+    <div class="loader"></div>
+
+    <!-- Dark mode toggle -->
+    <label class="switch" title="Toggle Dark Mode">
+      <input type="checkbox" id="darkModeToggle" />
+      <span class="slider round"></span>
+      <span class="toggle-label">Dark Mode</span>
+    </label>
+  </div>
+
+  <!-- Visitor Counter -->
+  <div id="visitor-counter" class="visitor-counter">
+    Visitors: <span id="count">Loading...</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
